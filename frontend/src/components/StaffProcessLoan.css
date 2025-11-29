@@ -1,0 +1,222 @@
+.process-loan-page {
+  padding: 30px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 60px);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.back-button {
+  background-color: #616161;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #424242;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.loan-details-card, .payment-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.loan-details-card h2, .payment-card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.books-section {
+  margin-top: 30px;
+}
+
+.books-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-table th {
+  background-color: #f5f5f5;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.books-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.payment-item.final {
+  border-bottom: none;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+  font-weight: bold;
+}
+
+.final-amount {
+  color: #1976d2;
+  font-size: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.apply-loyalty-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.apply-loyalty-button:hover {
+  background-color: #1565c0;
+}
+
+.confirm-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.confirm-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.confirm-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.back-button-action {
+  background-color: #616161;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.back-button-action:hover {
+  background-color: #424242;
+}
+
+.confirm-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-dialog {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+.confirm-dialog h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.confirm-dialog p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #555;
+}
+
+.dialog-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.confirm-dialog-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.confirm-dialog-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.cancel-dialog-button {
+  background-color: #616161;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cancel-dialog-button:hover {
+  background-color: #424242;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+}
+
