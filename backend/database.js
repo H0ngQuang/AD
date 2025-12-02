@@ -107,6 +107,11 @@ function insertSampleData() {
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     ['reader1', hashedPassword, 'Hồng Quang', '03456', 'Hà Nội', '12345', '2004-08-02', 'reader', 350]);
 
+  // Additional sample reader expected in scenario: Phạm Hồng Quang
+  db.run(`INSERT OR IGNORE INTO users (username, password, full_name, phone, address, cccd, birth_date, role, points) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    ['reader2', hashedPassword, 'Phạm Hồng Quang', '039999', 'Hà Nội', '67890', '1995-05-05', 'reader', 120]);
+
   db.run(`INSERT OR IGNORE INTO users (username, password, full_name, phone, address, cccd, birth_date, role, points) 
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     ['b', staffPassword, 'Trần Thị Hồng', '035648', 'Dương Nội, Hà Đông', '24512', '1990-01-01', 'staff', 0]);
